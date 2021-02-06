@@ -36,7 +36,7 @@ const UserList = ({ users }) => {
       <input type="text" id="name" placeholder="Ingrese un nombre" />
       <input type="text" id="lastname" placeholder="Ingrese un apellido" />
       <button onClick={handleAddUser}>Añadir</button>
-      <button>Elimina el último usuario</button>
+      <button>Eliminacion del último usuario</button>
       <ul>
         {usersList.map((user, index) => {
           return <li key={Math.random()}>{formatName(user)}</li>;
